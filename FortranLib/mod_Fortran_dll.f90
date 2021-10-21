@@ -3,15 +3,19 @@ module mod_Fortran_dll
     implicit none
     
     real(c_double), parameter :: pi = 3.141592653589792
-    integer, parameter :: max_size = 100;
-    
-    type curve
-    sequence
-        integer(c_int) :: size, pad
-        real(c_double) :: x(max_size), y(max_size)
-    end type
     
     contains
+    
+    subroutine adder(a,b,x,y)
+        !DEC$ ATTRIBUTES DLLEXPORT, alias:'adder' :: adder
+        !DEC$ ATTRIBUTES VALUE :: a,b
+        !DEC$ ATTRIBUTES REFERENCE :: x,y
+        implicit none
+        integer, intent(in) :: a,b
+        integer, intent(out) :: x,y
+        y = a + b
+        x = 2*a+3*b
+    end subroutine
     
     subroutine fill_curve(n, x, y)
     !DEC$ ATTRIBUTES DLLEXPORT, alias:'fill_curve' :: fill_curve
@@ -26,14 +30,4 @@ module mod_Fortran_dll
         
     end subroutine
     
-    subroutine adder(a,b,x,y)
-        !DEC$ ATTRIBUTES DLLEXPORT, alias:'adder' :: adder
-        !DEC$ ATTRIBUTES VALUE :: a,b
-        !DEC$ ATTRIBUTES REFERENCE :: x,y
-        implicit none
-        integer, intent(in) :: a,b
-        integer, intent(out) :: x,y
-        y = a + b
-        x = 2*a+3*b
-    end subroutine
 end module
