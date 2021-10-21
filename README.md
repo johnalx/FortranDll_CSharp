@@ -48,3 +48,6 @@ The driver code calls the Fortran dll functions exported above with the declarat
 ```
 
 care must be taken to include the .dll from the fortran compilation in the same folder as the csharp binaries. I have done this by including a link to an existing item ("Add Existing Item, Add As Link") of executable type and setting the property to copy on compile.
+I have done this using the recommendations from https://devopsonwindows.com/handle-platform-specific-dependencies/ and I specified
+a project property that takes the value of `..\FortranLib\Debug` on x86 and `..\FortranLib\x84\Debug` on x64, in order to
+always link the correct dll in the csharp project.
