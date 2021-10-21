@@ -1,0 +1,50 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31702.278
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FortranDll_CSharp", "FortranDll_CSharp\FortranDll_CSharp.csproj", "{5980D1FE-F934-4469-BE5D-5472207D1880}"
+EndProject
+Project("{6989167D-11E4-40FE-8C1A-2192A86A7E90}") = "FortranLib", "FortranLib\FortranLib.vfproj", "{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Debug|x64.ActiveCfg = Debug|x64
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Debug|x64.Build.0 = Debug|x64
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Debug|x86.Build.0 = Debug|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Release|x64.ActiveCfg = Release|x64
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Release|x64.Build.0 = Release|x64
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Release|x86.ActiveCfg = Release|Any CPU
+		{5980D1FE-F934-4469-BE5D-5472207D1880}.Release|x86.Build.0 = Release|Any CPU
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Debug|Any CPU.ActiveCfg = Debug|Win32
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Debug|Any CPU.Build.0 = Debug|Win32
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Debug|x64.ActiveCfg = Debug|x64
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Debug|x64.Build.0 = Debug|x64
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Debug|x86.ActiveCfg = Debug|Win32
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Debug|x86.Build.0 = Debug|Win32
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Release|Any CPU.ActiveCfg = Release|Win32
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Release|x64.ActiveCfg = Release|x64
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Release|x64.Build.0 = Release|x64
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Release|x86.ActiveCfg = Release|Win32
+		{7D91E2CB-7F73-4E23-81E7-61EA711AAD23}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5D4831DA-3F6D-48DD-B038-C9A60FA6F7DE}
+	EndGlobalSection
+EndGlobal
